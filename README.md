@@ -5,6 +5,7 @@ A comprehensive web-based student management system built with PHP and MySQL. Th
 ## 📋 Features
 
 ### Core Modules
+
 - **Student Management**: Add, edit, delete, and manage student records
 - **Course Management**: Create and manage courses with course codes and credits
 - **Class Management**: Organize classes and manage class information
@@ -14,6 +15,7 @@ A comprehensive web-based student management system built with PHP and MySQL. Th
 - **User Management**: Admin and staff user account management with role-based access
 
 ### Technical Features
+
 - Responsive Bootstrap UI design
 - Secure password hashing for user authentication
 - Prepared statements to prevent SQL injection
@@ -31,24 +33,29 @@ A comprehensive web-based student management system built with PHP and MySQL. Th
 ## 📦 Installation
 
 ### Prerequisites
+
 - XAMPP (PHP, MySQL, Apache)
 - Web Browser
 
 ### Setup Steps
 
 1. **Clone the repository**
+
    ```bash
    git clone https://github.com/Muhammadyaqoobwako/Student-management-system.git
    cd Student-management-system
    ```
 
 2. **Create Database**
+
    - Open phpMyAdmin (http://localhost/phpmyadmin)
    - Create a new database named `crudoperation`
    - Import the `database.sql` file
 
 3. **Configure Database Connection**
+
    - Verify the connection settings in `connect.php`:
+
    ```php
    $con = new mysqli('localhost','root','','crudoperation');
    ```
@@ -109,30 +116,30 @@ A comprehensive web-based student management system built with PHP and MySQL. Th
 
 ### Tables Overview
 
-| Table | Purpose |
-|-------|---------|
-| `students` | Store student information |
-| `classes` | Manage class information |
-| `courses` | Maintain course details |
+| Table         | Purpose                          |
+| ------------- | -------------------------------- |
+| `students`    | Store student information        |
+| `classes`     | Manage class information         |
+| `courses`     | Maintain course details          |
 | `enrollments` | Track student-course enrollments |
-| `attendance` | Record attendance logs |
-| `marks` | Store examination marks |
-| `users` | Admin/staff accounts |
+| `attendance`  | Record attendance logs           |
+| `marks`       | Store examination marks          |
+| `users`       | Admin/staff accounts             |
 
 For detailed schema, see `database.sql`
 
 ## 🔑 Key PHP Files
 
-| File | Description |
-|------|-------------|
-| `connect.php` | Database connection configuration |
-| `index.php` | Main dashboard with statistics |
-| `display.php` | Display all students |
-| `user.php` | Student add/manage page |
-| `update.php` | Update student records |
-| `delete.php` | Delete student records |
-| `add_*.php` | Add new records for various modules |
-| `edit_*.php` | Edit forms for various modules |
+| File           | Description                            |
+| -------------- | -------------------------------------- |
+| `connect.php`  | Database connection configuration      |
+| `index.php`    | Main dashboard with statistics         |
+| `display.php`  | Display all students                   |
+| `user.php`     | Student add/manage page                |
+| `update.php`   | Update student records                 |
+| `delete.php`   | Delete student records                 |
+| `add_*.php`    | Add new records for various modules    |
+| `edit_*.php`   | Edit forms for various modules         |
 | `*_manage.php` | Management views for different modules |
 
 ## 🔒 Security Features
